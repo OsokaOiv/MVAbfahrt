@@ -35,10 +35,10 @@ struct TicketView: View {
     var body: some View {
         NavigationView{
             VStack{
-                Text("Tickets")
+                Image("Tickets")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
             }
-            .navigationBarTitleDisplayMode(.large)
-            .navigationTitle("Tickets")
         }
     }
 }
@@ -59,7 +59,10 @@ struct ProfilView: View {
     var body: some View {
         NavigationView{
             VStack{
-                Image(systemName: "person.crop.circle").frame(width: 200, height: 200)
+                Image(systemName: "person.crop.circle")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 200, height: 200)
                 Text("Vinzenz Prakoso")
                 HStack{
                     Text("6")
@@ -104,7 +107,7 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    TicketView()
 }
 
 extension CLLocationCoordinate2D {
