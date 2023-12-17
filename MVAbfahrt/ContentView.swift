@@ -23,7 +23,7 @@ struct MapView: View {
                 Map{
                     
                 }
-                .padding()
+                .background(.accent)
             }
         }
         .navigationBarTitleDisplayMode(.large)
@@ -36,7 +36,6 @@ struct TicketView: View {
         NavigationView{
             VStack{
                 Text("Tickets")
-                ProgressView("Level 6", value: 30, total: 100).padding()
             }
             .navigationBarTitleDisplayMode(.large)
             .navigationTitle("Tickets")
@@ -60,7 +59,7 @@ struct ProfilView: View {
     var body: some View {
         NavigationView{
             VStack{
-                Image(systemName: "person.crop.circle")
+                Image(systemName: "person.crop.circle").frame(width: 200, height: 200)
                 Text("Vinzenz Prakoso")
                 HStack{
                     Text("6")
@@ -83,18 +82,15 @@ struct ContentView: View {
         TabView {
             MapView()
                 .tabItem {
-                    Image(systemName: "location.circle")
-                    Text("Karte")
+                    Label("Karte", systemImage: "location.circle")
                 }
             TicketView()
                 .tabItem {
-                    Image(systemName: "tag")
-                    Text("Tickets")
+                    Label("Tickets", systemImage: "tag")
                 }
-            FreundeView()
+            FriendsView()
                 .tabItem {
-                    Image(systemName: "person.2.fill")
-                    Text("Freunde")
+                    Label("Freunde", systemImage: "person.2.fill")
                 }
             ProfilView()
                 .tabItem {
@@ -113,4 +109,5 @@ struct ContentView: View {
 
 extension CLLocationCoordinate2D {
     static let Munich = CLLocationCoordinate2D(latitude: 48.137154, longitude: 11.576124)
+    static let LMU = CLLocationCoordinate2D(latitude: 48.150835093467876,  longitude: 11.580440382887316)
 }

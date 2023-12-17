@@ -16,6 +16,7 @@
 		2C9027D42B2F4896008CABD2 /* MVAbfahrtUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9027D32B2F4896008CABD2 /* MVAbfahrtUITestsLaunchTests.swift */; };
 		2C9028172B2F8A1D008CABD2 /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9028162B2F8A1D008CABD2 /* FriendsView.swift */; };
 		2C9028192B2F92D3008CABD2 /* BenefitsInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9028182B2F92D3008CABD2 /* BenefitsInfoView.swift */; };
+		2C90281B2B2FA57A008CABD2 /* FreundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C90281A2B2FA57A008CABD2 /* FreundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		2C9027D32B2F4896008CABD2 /* MVAbfahrtUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVAbfahrtUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2C9028162B2F8A1D008CABD2 /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
 		2C9028182B2F92D3008CABD2 /* BenefitsInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitsInfoView.swift; sourceTree = "<group>"; };
+		2C90281A2B2FA57A008CABD2 /* FreundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				2C9027BC2B2F4895008CABD2 /* Preview Content */,
 				2C9028162B2F8A1D008CABD2 /* FriendsView.swift */,
 				2C9028182B2F92D3008CABD2 /* BenefitsInfoView.swift */,
+				2C90281A2B2FA57A008CABD2 /* FreundView.swift */,
 			);
 			path = MVAbfahrt;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			files = (
 				2C9028192B2F92D3008CABD2 /* BenefitsInfoView.swift in Sources */,
 				2C9028172B2F8A1D008CABD2 /* FriendsView.swift in Sources */,
+				2C90281B2B2FA57A008CABD2 /* FreundView.swift in Sources */,
 				2C9027B92B2F4891008CABD2 /* ContentView.swift in Sources */,
 				2C9027B72B2F4891008CABD2 /* MVAbfahrtApp.swift in Sources */,
 			);
