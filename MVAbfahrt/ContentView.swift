@@ -10,8 +10,6 @@ import MapKit
 
 struct MapView: View {
     @State private var search: String = ""
-    /*@State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 48.137154, longitude: 11.576124), span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
-     */
     var body: some View {
         NavigationView{
             VStack{
@@ -21,10 +19,9 @@ struct MapView: View {
                         .autocorrectionDisabled()
                 }
                 .padding()
-                .background(.gray)
+                .background(.accent)
                 Map{
-                    /*Map(coordinateRegion: $region, showsUserLocation: true, userTrackingMode: .constant(.follow)
-                     )*/
+                    
                 }
                 .padding()
             }
@@ -107,14 +104,6 @@ struct ContentView: View {
         }
         .navigationBarTitleDisplayMode(.inline)
         .navigationTitle("MVGO")
-        
-        /*VStack {
-         Image(systemName: "globe")
-         .imageScale(.large)
-         .foregroundStyle(.tint)
-         Text("Hello, world!")
-         }
-         .padding()*/
     }
 }
 

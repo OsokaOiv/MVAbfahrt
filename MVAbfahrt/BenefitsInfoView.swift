@@ -12,7 +12,9 @@ struct BenefitsInfoView: View {
         Text("Fahrt über 3 Stationen").fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
         Text("->mit QR Code ein/auschecken").fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
         List {
-            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Content")/*@END_MENU_TOKEN@*/
+            Text("U-Bahn 2 Punkte")
+            Text("Tram 3 Punkte")
+            Text("Bus 1 Punkt")
         }
     }
 }
