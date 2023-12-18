@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2C25E37B2B30DFDF0085E65C /* FriendRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C25E37A2B30DFDF0085E65C /* FriendRowView.swift */; };
+		2C25E37D2B30EABC0085E65C /* ProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C25E37C2B30EABC0085E65C /* ProfilView.swift */; };
 		2C9027B72B2F4891008CABD2 /* MVAbfahrtApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9027B62B2F4891008CABD2 /* MVAbfahrtApp.swift */; };
 		2C9027B92B2F4891008CABD2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9027B82B2F4891008CABD2 /* ContentView.swift */; };
 		2C9027BB2B2F4895008CABD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C9027BA2B2F4895008CABD2 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		2C25E37A2B30DFDF0085E65C /* FriendRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRowView.swift; sourceTree = "<group>"; };
+		2C25E37C2B30EABC0085E65C /* ProfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilView.swift; sourceTree = "<group>"; };
 		2C9027B32B2F4891008CABD2 /* MVAbfahrt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVAbfahrt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C9027B62B2F4891008CABD2 /* MVAbfahrtApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVAbfahrtApp.swift; sourceTree = "<group>"; };
 		2C9027B82B2F4891008CABD2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				2C9027BA2B2F4895008CABD2 /* Assets.xcassets */,
 				2C9027BC2B2F4895008CABD2 /* Preview Content */,
 				2C9028182B2F92D3008CABD2 /* BenefitsInfoView.swift */,
+				2C25E37C2B30EABC0085E65C /* ProfilView.swift */,
 			);
 			path = MVAbfahrt;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C9028192B2F92D3008CABD2 /* BenefitsInfoView.swift in Sources */,
+				2C25E37D2B30EABC0085E65C /* ProfilView.swift in Sources */,
 				2C25E37B2B30DFDF0085E65C /* FriendRowView.swift in Sources */,
 				2C9028172B2F8A1D008CABD2 /* FriendsView.swift in Sources */,
 				2C90281B2B2FA57A008CABD2 /* FreundDetailView.swift in Sources */,
