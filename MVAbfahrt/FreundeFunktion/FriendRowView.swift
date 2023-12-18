@@ -16,7 +16,13 @@ struct FriendRowView: View {
                 .resizable()
                 .frame(width: 50, height: 50)
                 .foregroundColor(color)
-            Text(name)
+            VStack(alignment: .leading, spacing: 6)
+            {
+                Text(name)
+                    .fontWeight(.bold)
+                Text("U3 Universität")
+                    .fontWeight(.light)
+            }
         }
     }
 }
