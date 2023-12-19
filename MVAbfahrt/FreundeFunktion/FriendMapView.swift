@@ -8,7 +8,7 @@
 import SwiftUI
 import MapKit
 
-struct FreundDetailView: View {
+struct FriendMapView: View {
     var name: String
     var body: some View {
         Map{
@@ -19,5 +19,5 @@ struct FreundDetailView: View {
 }
 
 #Preview {
-    FreundDetailView(name: "Freund B")
+    FriendMapView(name: "Freund B")
 }

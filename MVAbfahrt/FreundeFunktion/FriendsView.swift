@@ -11,16 +11,16 @@ struct FriendsView: View {
     var body: some View {
         NavigationView{
             List{
-                NavigationLink(destination: FreundDetailView(name: "Eva")){
+                NavigationLink(destination: FriendMapView(name: "Eva")){
                     FriendRowView(name: "Eva", color: .cyan)
                 }
-                NavigationLink(destination: FreundDetailView(name: "Ines")){
+                NavigationLink(destination: FriendMapView(name: "Ines")){
                     FriendRowView(name: "Ines", color: .red)
                 }
-                NavigationLink(destination: FreundDetailView(name: "Laurin")){
+                NavigationLink(destination: FriendMapView(name: "Laurin")){
                     FriendRowView(name: "Laurin", color: .blue)
                 }
-                NavigationLink(destination: FreundDetailView(name: "Viktoria")){
+                NavigationLink(destination: FriendMapView(name: "Viktoria")){
                     FriendRowView(name: "Viktoria", color: .indigo)
                 }
             }
