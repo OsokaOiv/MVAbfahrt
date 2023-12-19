@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C176A5A2B32288A009AD2AE /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C176A592B32288A009AD2AE /* MapView.swift */; };
 		2C25E37B2B30DFDF0085E65C /* FriendRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C25E37A2B30DFDF0085E65C /* FriendRowView.swift */; };
 		2C25E37D2B30EABC0085E65C /* ProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C25E37C2B30EABC0085E65C /* ProfilView.swift */; };
 		2C9027B72B2F4891008CABD2 /* MVAbfahrtApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9027B62B2F4891008CABD2 /* MVAbfahrtApp.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C176A592B32288A009AD2AE /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		2C25E37A2B30DFDF0085E65C /* FriendRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRowView.swift; sourceTree = "<group>"; };
 		2C25E37C2B30EABC0085E65C /* ProfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilView.swift; sourceTree = "<group>"; };
 		2C9027B32B2F4891008CABD2 /* MVAbfahrt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVAbfahrt.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +83,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C176A562B322628009AD2AE /* MapFunktion */ = {
+			isa = PBXGroup;
+			children = (
+				2C176A592B32288A009AD2AE /* MapView.swift */,
+			);
+			path = MapFunktion;
+			sourceTree = "<group>";
+		};
 		2C25E3792B30DF980085E65C /* FreundeFunktion */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +124,7 @@
 		2C9027B52B2F4891008CABD2 /* MVAbfahrt */ = {
 			isa = PBXGroup;
 			children = (
+				2C176A562B322628009AD2AE /* MapFunktion */,
 				2C25E3792B30DF980085E65C /* FreundeFunktion */,
 				2C9027B62B2F4891008CABD2 /* MVAbfahrtApp.swift */,
 				2C9027B82B2F4891008CABD2 /* ContentView.swift */,
@@ -286,6 +297,7 @@
 				2C9028172B2F8A1D008CABD2 /* FriendsView.swift in Sources */,
 				2C90281B2B2FA57A008CABD2 /* FreundDetailView.swift in Sources */,
 				2C9027B92B2F4891008CABD2 /* ContentView.swift in Sources */,
+				2C176A5A2B32288A009AD2AE /* MapView.swift in Sources */,
 				2C9027B72B2F4891008CABD2 /* MVAbfahrtApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
