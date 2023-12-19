@@ -31,8 +31,14 @@ struct MapView: View {
                     }
                     .padding()
                     .background(.accent)
-                    Map{
-                        
+                    Map {
+                        MapPolygon(coordinates: [.LMU,.Munich])
+                            .foregroundStyle(.orange.opacity(0))
+                    }
+                    .mapControls {
+                        // MapUserLocationButton()
+                        MapCompass()
+                        MapScaleView()
                     }
                 }
             case "PathView":
