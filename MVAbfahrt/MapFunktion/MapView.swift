@@ -43,24 +43,29 @@ struct MapView: View {
                 }
             case "PathView":
                 VStack {
-                    Image("Tickets")
+                    Image("VonWoNachWo")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .onTapGesture {
-                            showView = "MapView"
+                            showView = "NextView"
                         }
-                    Button("Ziel: "+destination)
+                    /*Button("Ziel: "+destination)
                     {
                         showView = "NextView"
-                    }
+                    }*/
                 }
             case "NextView":
                 VStack {
-                    Text("This is the NextView")
                     Button("Back")
                     {
                         showView = "MapView"
                     }
+                    Image("MapRoute")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .onTapGesture {
+                            showView = "NextView"
+                        }
                 }
             default:
                 Text("Default") // you should never reach this
