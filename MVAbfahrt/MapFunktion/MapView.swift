@@ -56,9 +56,13 @@ struct MapView: View {
                 }
             case "NextView":
                 VStack {
-                    Button("Back")
-                    {
-                        showView = "MapView"
+                    HStack {
+                        Button("Back")
+                        {
+                            showView = "MapView"
+                        }
+                        .padding()
+                        Spacer() // left align button
                     }
                     Image("MapRoute")
                         .resizable()
@@ -66,6 +70,7 @@ struct MapView: View {
                         .onTapGesture {
                             showView = "NextView"
                         }
+                    Spacer()
                 }
             default:
                 Text("Default") // you should never reach this
