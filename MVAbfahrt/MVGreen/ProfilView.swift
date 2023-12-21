@@ -17,20 +17,29 @@ struct ProfilView: View {
                     .frame(width: 200, height: 200)
                     .padding()
                     .foregroundColor(.accent)
-                Text("Vinzenz Prakoso")
-                HStack{
-                    Text("6")
-                    ProgressView("MVGreen", value: 30, total: 100).padding().accentColor(.green)
-                    Text("7")
+                Text("Vinzenz Prakoso") // TODO: Image Pen
+                Divider()
+                VStack{
+                    HStack
+                    {
+                        Text("MVGreen")
+                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                            .foregroundColor(.green)
+                        Spacer()
+                    }
+                    HStack{
+                        Text("6")
+                        ProgressView("404/1000 Punkte", value: 404, total: 1000).padding().accentColor(.green)
+                        Text("7")
+                    }
                 }.padding()
                 List{
-                    // TODO PunkteEinloesenView
                     NavigationLink(destination: BenefitsInfoView()){
                         Text("Punkte einlösen")
                     }
-                    NavigationLink(destination: BenefitsInfoView()){
+                    /*NavigationLink(destination: BenefitsInfoView()){
                         Text("MVGreen Information")
-                    }
+                    }*/
                 }
                 Spacer()
             }
