@@ -8,6 +8,14 @@
 import SwiftUI
 
 struct ProfilView: View {
+    let events = [
+        (Date().addingTimeInterval(-3400), "U3 Universität", 3),
+        (Date().addingTimeInterval(-3600), "U3 Münchener Freiheit", 0),
+        (Date().addingTimeInterval(-4000), "Bus 53 Münchener Freiheit", 1),
+        (Date().addingTimeInterval(-4900), "Bus 53 Kürfürstenplatz", 0),
+        (Date().addingTimeInterval(-5000), "Tram 27 Kürfürstenplatz", 2),
+        (Date().addingTimeInterval(-7200), "Tram 27 Petruelring", 0)
+    ]
     var body: some View {
         NavigationView{
             VStack{
@@ -37,9 +45,9 @@ struct ProfilView: View {
                     NavigationLink(destination: BenefitsInfoView()){
                         Text("Punkte einlösen")
                     }
-                    /*NavigationLink(destination: BenefitsInfoView()){
-                        Text("MVGreen Information")
-                    }*/
+                    NavigationLink(destination: TimelineView(events: events, lineColor: .gray, pointColor: .accentColor)){
+                        Text("MVGreen Timeline")
+                    }
                 }
                 Spacer()
             }

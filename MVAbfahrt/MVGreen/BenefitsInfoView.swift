@@ -8,38 +8,36 @@
 import SwiftUI
 
 struct BenefitsInfoView: View {
-    let events = [
-        (Date(), "U3 Universität"),
-        (Date().addingTimeInterval(-3600), "U3 Münchener Freiheit"),
-        (Date().addingTimeInterval(-7200), "Bus 53 Münchener Freiheit"),
-        (Date().addingTimeInterval(-7200), "Bus 53 Kürfürstenplatz"),
-        (Date().addingTimeInterval(-7200), "Tram 27 Kürfürstenplatz"),
-        (Date().addingTimeInterval(-10800), "Tram 27 Petruelring")
-    ]
+    @State var points = 404
     
     var body: some View {
         ScrollView
         {
             VStack
             {
-                TimelineView(events: events, lineColor: .gray, pointColor: .accentColor)
-                Text("Fahrt über 3 Stationen")
-                Text("-> mit QR Code ein/auschecken")
-                ScrollView {
-                    // TODO: BenefitRowView for images
-                    Text("U-Bahn 2 Punkte")
-                    Text("Tram 3 Punkte")
-                    Text("Bus 1 Punkt")
-                }
+                Spacer()
+                Text("Fahrt über 3 Stationen").fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                // TODO: BenefitRowView for images
+                Text("U-Bahn 3 Punkte")
+                Text("Tram 2 Punkte")
+                Text("Bus 1 Punkt")
                 Divider()
                 Text("Einlösen").fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                Text("Aktuelle Punkte: 404")
-                ScrollView {
-                    // TODO: clickable und Punkte Preis
-                    Text("10 Bäume pflanzen")
-                    Text("1 Deutschland-Ticket")
+                Text("Aktuelle Punkte: " + points.formatted())
+                NavigationView {
+                    List {
+                        Button("100 Punkte:  Baum pflanzen"){
+                            if (points >= 100) {
+                                points -= 100
+                            }
+                        }
+                        Button("1000 Punkte: Deutschland-Ticket"){
+                            if (points >= 1000) {
+                                points -= 1000
+                            }
+                        }
+                    }
                 }
-                Spacer()
             }
         }
         .navigationBarTitleDisplayMode(.inline)
