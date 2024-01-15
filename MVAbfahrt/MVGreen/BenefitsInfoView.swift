@@ -8,14 +8,24 @@
 import SwiftUI
 
 struct BenefitsInfoView: View {
+    let events = [
+        (Date(), "U3 Universität"),
+        (Date().addingTimeInterval(-3600), "U3 Münchener Freiheit"),
+        (Date().addingTimeInterval(-7200), "Bus 53 Münchener Freiheit"),
+        (Date().addingTimeInterval(-7200), "Bus 53 Kürfürstenplatz"),
+        (Date().addingTimeInterval(-7200), "Tram 27 Kürfürstenplatz"),
+        (Date().addingTimeInterval(-10800), "Tram 27 Petruelring")
+    ]
+    
     var body: some View {
-        NavigationView
+        ScrollView
         {
             VStack
             {
+                TimelineView(events: events, lineColor: .gray, pointColor: .accentColor)
                 Text("Fahrt über 3 Stationen")
                 Text("-> mit QR Code ein/auschecken")
-                List {
+                ScrollView {
                     // TODO: BenefitRowView for images
                     Text("U-Bahn 2 Punkte")
                     Text("Tram 3 Punkte")
@@ -24,7 +34,7 @@ struct BenefitsInfoView: View {
                 Divider()
                 Text("Einlösen").fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                 Text("Aktuelle Punkte: 404")
-                List {
+                ScrollView {
                     // TODO: clickable und Punkte Preis
                     Text("10 Bäume pflanzen")
                     Text("1 Deutschland-Ticket")

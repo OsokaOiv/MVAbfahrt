@@ -20,6 +20,7 @@
 		2C9028172B2F8A1D008CABD2 /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9028162B2F8A1D008CABD2 /* FriendsView.swift */; };
 		2C9028192B2F92D3008CABD2 /* BenefitsInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9028182B2F92D3008CABD2 /* BenefitsInfoView.swift */; };
 		2C90281B2B2FA57A008CABD2 /* FriendMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C90281A2B2FA57A008CABD2 /* FriendMapView.swift */; };
+		2CED30FF2B55B60D00F3B413 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CED30FE2B55B60D00F3B413 /* TimelineView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		2C9028162B2F8A1D008CABD2 /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
 		2C9028182B2F92D3008CABD2 /* BenefitsInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitsInfoView.swift; sourceTree = "<group>"; };
 		2C90281A2B2FA57A008CABD2 /* FriendMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendMapView.swift; sourceTree = "<group>"; };
+		2CED30FE2B55B60D00F3B413 /* TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			children = (
 				2C9028182B2F92D3008CABD2 /* BenefitsInfoView.swift */,
 				2C25E37C2B30EABC0085E65C /* ProfilView.swift */,
+				2CED30FE2B55B60D00F3B413 /* TimelineView.swift */,
 			);
 			path = MVGreen;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				2C90281B2B2FA57A008CABD2 /* FriendMapView.swift in Sources */,
 				2C9027B92B2F4891008CABD2 /* ContentView.swift in Sources */,
 				2C176A5A2B32288A009AD2AE /* MapView.swift in Sources */,
+				2CED30FF2B55B60D00F3B413 /* TimelineView.swift in Sources */,
 				2C9027B72B2F4891008CABD2 /* MVAbfahrtApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
