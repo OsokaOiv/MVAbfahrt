@@ -10,6 +10,8 @@
 		2C176A5A2B32288A009AD2AE /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C176A592B32288A009AD2AE /* MapView.swift */; };
 		2C25E37B2B30DFDF0085E65C /* FriendRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C25E37A2B30DFDF0085E65C /* FriendRowView.swift */; };
 		2C25E37D2B30EABC0085E65C /* ProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C25E37C2B30EABC0085E65C /* ProfilView.swift */; };
+		2C68E4932B5E5AA5007437DD /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C68E4922B5E5AA5007437DD /* MusicViewController.swift */; };
+		2C68E4952B5E5D31007437DD /* LockScreenMusicPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C68E4942B5E5D31007437DD /* LockScreenMusicPlayerView.swift */; };
 		2C9027B72B2F4891008CABD2 /* MVAbfahrtApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9027B62B2F4891008CABD2 /* MVAbfahrtApp.swift */; };
 		2C9027B92B2F4891008CABD2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9027B82B2F4891008CABD2 /* ContentView.swift */; };
 		2C9027BB2B2F4895008CABD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C9027BA2B2F4895008CABD2 /* Assets.xcassets */; };
@@ -44,6 +46,8 @@
 		2C176A592B32288A009AD2AE /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		2C25E37A2B30DFDF0085E65C /* FriendRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRowView.swift; sourceTree = "<group>"; };
 		2C25E37C2B30EABC0085E65C /* ProfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilView.swift; sourceTree = "<group>"; };
+		2C68E4922B5E5AA5007437DD /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		2C68E4942B5E5D31007437DD /* LockScreenMusicPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenMusicPlayerView.swift; sourceTree = "<group>"; };
 		2C9027B32B2F4891008CABD2 /* MVAbfahrt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVAbfahrt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C9027B62B2F4891008CABD2 /* MVAbfahrtApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVAbfahrtApp.swift; sourceTree = "<group>"; };
 		2C9027B82B2F4891008CABD2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				2C176A592B32288A009AD2AE /* MapView.swift */,
+				2C68E4922B5E5AA5007437DD /* MusicViewController.swift */,
+				2C68E4942B5E5D31007437DD /* LockScreenMusicPlayerView.swift */,
 			);
 			path = MapFunktion;
 			sourceTree = "<group>";
@@ -303,11 +309,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C9028192B2F92D3008CABD2 /* BenefitsInfoView.swift in Sources */,
+				2C68E4952B5E5D31007437DD /* LockScreenMusicPlayerView.swift in Sources */,
 				2C25E37D2B30EABC0085E65C /* ProfilView.swift in Sources */,
 				2C25E37B2B30DFDF0085E65C /* FriendRowView.swift in Sources */,
 				2C9028172B2F8A1D008CABD2 /* FriendsView.swift in Sources */,
 				2C90281B2B2FA57A008CABD2 /* FriendMapView.swift in Sources */,
 				2C9027B92B2F4891008CABD2 /* ContentView.swift in Sources */,
+				2C68E4932B5E5AA5007437DD /* MusicViewController.swift in Sources */,
 				2C176A5A2B32288A009AD2AE /* MapView.swift in Sources */,
 				2CED30FF2B55B60D00F3B413 /* TimelineView.swift in Sources */,
 				2C9027B72B2F4891008CABD2 /* MVAbfahrtApp.swift in Sources */,
